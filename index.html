@@ -479,7 +479,7 @@
           </div>
 
           <div class="col-lg-7">
-            <form action="" method="post" class="contact_form php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form onsubmit="sendEmail(); reset(); return false" action="" method="post" class="contact_form php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -601,29 +601,45 @@
 
   <script>
 
-    const form = document.querySelector('.contact_form');
-    // code to send the message when the button is clicked
-    function sendMsg(e){
-      e.preventDefault();
+    // const form = document.querySelector('.contact_form');
+    // // code to send the message when the button is clicked
+    // function sendMsg(e){
+    //   e.preventDefault();
 
       
-      const email = document.querySelector('.email'),
-      subject = document.querySelector('.subject'),
-      msg = document.querySelector('.msg');
+    //   const email = document.querySelector('.email'),
+    //   subject = document.querySelector('.subject'),
+    //   msg = document.querySelector('.msg');
 
+    //   Email.send({
+    //     SecureToken : "f7b1cd8f-41d0-49b7-8a2c-903338b9ce5d",
+    //     To : 'jethrokakson@gmail.com',
+    //     From : email.value,
+    //     Subject : subject.value,
+    //     Body : msg.value
+    //   }).then(
+    //     message => alert(message)
+    //   );
+    // }
+
+    // //add event listener
+    // form.addEventListener('submit', sendMsg);
+
+    function sendEmail(){
       Email.send({
-        SecureToken : "f7b1cd8f-41d0-49b7-8a2c-903338b9ce5d",
-        To : 'jethrokakson@gmail.com',
-        From : email.value,
-        Subject : subject.value,
-        Body : msg.value
+        Host : "smtp.elasticemail.com",
+        Username : "jethrokakson@gmail.com",
+        Password : "6D32B72CE12BCAF26E8420317BEFE6CA888A",
+        To : 'kaksonjethro@gmail.com',
+        From : document.getElementById('email-field').value,
+        Subject : "Inquiry",
+        Body : "Name: " + document.getElementById('name-field').value + 
+                "<br> Email: " + document.getElementById('subject-field').value +
+                "<br> Message: " + document.getElementById('message-field').value
       }).then(
         message => alert(message)
       );
     }
-
-    //add event listener
-    form.addEventListener('submit', sendMsg);
   </script>
 
 </body>
