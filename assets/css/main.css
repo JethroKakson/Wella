@@ -59,6 +59,9 @@ h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
 }
+p, .p{
+  font-size: medium;
+}
 
 /*--------------------------------------------------------------
 # Global Header
@@ -1980,13 +1983,6 @@ section,
 .portfolio-details .portfolio-description p {
   padding: 0;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
-}
-
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
 }
 
 .img-bg {
