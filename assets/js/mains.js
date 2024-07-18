@@ -1,6 +1,3 @@
-(function() {
-  "use strict";
-
   /**
    * Hero Slider
    */
@@ -23,6 +20,9 @@
       prevEl: ".custom-swiper-button-prev",
     },
   });
+
+(function() {
+  "use strict";
 
   /**
    * Apply .scrolled class to the body as the page is scrolled down
