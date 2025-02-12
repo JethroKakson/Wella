@@ -1089,7 +1089,7 @@ section,
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
-.stats i {
+/* .stats i {
   background-color: var(--accent-color);
   color: var(--contrast-color);
   border: 6px solid var(--contrast-color);
@@ -1126,12 +1126,12 @@ section,
   margin: 0;
   font-family: var(--heading-font);
   font-size: 16px;
-}
+} */
 
 /*--------------------------------------------------------------
 # Clients Section
 --------------------------------------------------------------*/
-.clients {
+/* .clients {
   --background-color: color-mix(in srgb, var(--accent-color), transparent 96%);
   padding: 25px 0;
 }
@@ -1150,7 +1150,7 @@ section,
 
 .clients .swiper-slide img:hover {
   transform: scale(1.1);
-}
+} */
 
 /*--------------------------------------------------------------
 # Services Section
@@ -1206,7 +1206,7 @@ section,
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
-.testimonials {
+/* .testimonials {
   --default-color: #ffffff;
   --background-color: #000000;
   --heading-color: #ffffff;
@@ -1325,7 +1325,7 @@ section,
   .testimonials .testimonial-item p {
     width: 80%;
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Portfolio Section
